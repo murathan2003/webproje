@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,92 @@
     <a href="bizkimiz.html"><H3><mark>BizKimiz?</Mark></h3></a>
 <a href="hedefimiz.html"><H3><mark>Hedefimiz</Mark></h3></a>
 
+<!--
+1 from =liste oluşturur
+2 input =değer oluşturu
+3 type =değerin türünü belirler
+4 value = alınabilecek değerleri belirtir
+5 rowspan ve colspan =satır ve sütünları birleştirir
 
+
+
+
+-->
     <h1>İletişim</h1>
+    
+<form>
+<table>
+    <tr>
+        <td>Adınız:</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>Soyadınız:</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>Email Adres:</td>
+        <td><input type="email"></td>
+    </tr>
+    <tr>
+        <td>şifre</td>
+        <td><input type="password"></td>
+    </tr>
+    <tr>
+        <td>Cinsiyet:</td>
+        <td>
+            <input id="erkekRadio" type="radio"name ="CinsiyetRadio"value="Erkek">
+            <label for="erkekRadio">Erkek</label>
+            <input id="kadınRadio" type="radio"name="CinsiyetRadio"value="Kadın">
+            <label for="kadınRadio">Kadın</label>
+        </td>
+    </tr>
+    <tr>
+        <td>Doğum Tarihiniz</td>
+        <td><input type="date"></td>
+    </tr>
+    <tr>
+        <th colspan="2">Hobiler</th>
+    </tr>
+    <tr>
+        <td>kitap okumal</td>
+        <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+        <td>Spor yapmak</td>
+        <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+        <td>Enstrüman Çalmak</td>
+        <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="file"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><textarea name="" id=""cols="40"rows="10"placeholder="mesajınız..."></textarea></td>
+    </tr>
+    <tr>
+        <th colspan="2">Kişisel verileriniz tarafımızca kayıt altına alınacaktır</th>
+    </tr>
+    <tr>
+        <td>OKUDUM ,ONAYLIYORUM. <input type="radio"name="SözleşmeRadio"></td>
+    </tr>
+        <tr>
+        <td>okudum ,onaylamıyorum. <input type="radio"name="SözleşmeRadio"></td>
+    </tr>
+    <tr>
+        <td colspan="2"> <input type="submit"value="Gönder">
+            <input type="reset"value="temizle"
+        </td>
+    </tr>
+
+
+
+
+</table>
+</form>
+
 
     <h2>Bizimle İletişime Geçin</h2>
     

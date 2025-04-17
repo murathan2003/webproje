@@ -7,6 +7,7 @@
     <meta name="keywords" content="blog,eğitim,geliştirme">
     <!--bu keyword seo için önemli anahtar kelimelerdir-->
     <meta name="description" content="bilgilendirme blogu">
+    <link rel="stylesheet" href="sayfalar/style.css">
     <!--küçük açılır pencerede bilgi vermek için kullanılır-->
     <title>Murathan Malkoç'un Blogu</title>
     <!--1 Kısa Yollar-->
@@ -38,6 +39,7 @@
 8 target blank = linki farklı sekmede açar.
 9 ol(sıralı) , ul(sırasız) liste oluşturur.
 10 table(tablo oluşturur) tr(satır ekler) td(sütün ekler) th(başlık olarak ekler) rowspan(satırları birleştirir) colspan(sütünları birleştirir)
+11 div = bize bir dikdörtgen alan açar css ile kullanıcaz.
 -->
 
     <!--img (image) :resim 
@@ -75,11 +77,11 @@ src (source) : kaynak
     <h3>ARAÇ SEGMENTLERİ:</h3>
     <hr>
     <ol type="1">
-        <p><i>A segmenti araçlar piyasanın en küçük araçları olarak biliniyor. 
+        <span><i>A segmenti araçlar piyasanın en küçük araçları olarak biliniyor. 
             Daha çok şehir içi kullanım için uygun görülen bu otomobiller, diğer segmentteki araçlara göre daha hesaplı bir seçenek sunuyor. 
             Uzunlukları en fazla 3,7 metre olan A segment arabalar, tam anlamıyla fiyat performans ürünü olarak görülüyor.
             Boyut olarak küçük olmalarının yanı sıra oldukça hafif araçlardan oluşuyor.
-            A segment araçlar uzun yolculuklar için genellikle pek tercih edilmiyor.</i></p>
+            A segment araçlar uzun yolculuklar için genellikle pek tercih edilmiyor.</i></span>
             
         <li>A SEGMENT
             <ol type="A">
@@ -98,16 +100,41 @@ src (source) : kaynak
 
             </ol>
         </li>
+        <center>
+        <table border="20">
+            <tr>
+                <th colspan="3">ARAÇ TABLOSU</th>
+            </tr>
+        <tr>
+            <th>isim</th>
+            <th>sınıf</th>
+            <th>fiyat</th>
+        </tr>
+        <tr>
+            <td>Fiat 500</td>
+            <td rowspan="4">A CLASS</td>
+            <td>400.000</td>
+        </tr>
+        <tr>
+            <td>Toyota_Aygo</td>
+            <td>500.000</td>
+        </tr>
+        <tr>
+        <td>Hyundai_i10</td>
+        <td>650.000</td>
+        </tr>
+        <tr>
+            <td>Citroen_c1</td>
+            <td>300.000</td>
+        </tr>
+        </table>
+        </center>
 <hr>
-<p> <i>B segment arabalar A segment modellerle çeşitli benzerlikler taşıyor. 
+<span> <i>B segment arabalar A segment modellerle çeşitli benzerlikler taşıyor. 
     Tıpkı A segment araçlar gibi küçük boyutlara sahip olan B segment arabalar, 3,7 ila 4 metre arası uzunlukta oluyor. 
     B segmentindeki araçlar A segmentine göre hem daha ağır hem de daha yüksek performansa sahip araçlardan oluşuyor.
     “Küçük aile otomobilleri” olarak da bilinen B segment otomobiller, diğer üst segmentlere göre uygun fiyatlarıyla öne çıkıyor.
-    B segment otomobiller ülkemizde en çok tercih edilen gruplardan birini oluşturuyor. </i></p>
-
-
-
-
+    B segment otomobiller ülkemizde en çok tercih edilen gruplardan birini oluşturuyor. </i></span>
         <li>B SEGMENT
             <ol type="A">
                 <li>Kia Rio</li>
@@ -125,6 +152,36 @@ src (source) : kaynak
 
             </ol>
         </li>
+        <center>
+        <table>
+<table border="20">
+    <tr>
+        <th colspan="3">ARAÇ TABLOSU</th>
+    </tr>
+<tr>
+    <th>isim</th>
+    <th>sınıf</th>
+    <th>fiyat</th>
+</tr>
+<tr>
+    <td>Kia_Rio</td>
+    <td rowspan ="4">B CLASS</td>
+    <td>600.000</td>
+</tr>
+<tr>
+    <td>SEAT_Ibiza</td>
+    <td>900.000</td>
+</tr>
+<tr>
+<td>Skoda_Fabia</td>
+<td>950.000</td>
+</tr>
+<tr>
+    <td>Renault_Clio</td>
+    <td>900.000</td>
+</tr>
+</table>
+            </center>
         <hr>
         <p> <i>Alt-orta sınıf” veya “kompakt sınıf” olarak tanımlanan C segmenti, Türkiye’de en çok satan otomobil segmenti olarak addediliyor. 
             C segment otomobiller, tıpkı B segment otomobiller gibi küçük ailelere uygun görülüyor. 
@@ -148,6 +205,35 @@ src (source) : kaynak
                     <img src ="resimler/civic.jpg"resim bulunamadı" width="20" height="20"</a>
             </ol>
         </li>
+        <center>
+        <table border="20">
+            <tr>
+                <th colspan="3">ARAÇ TABLOSU</th>
+            </tr>
+        <tr>
+            <th>isim</th>
+            <th>sınıf</th>
+            <th>fiyat</th>
+        </tr>
+        <tr>
+            <td>Audi_A3</td>
+            <td rowspan="4">C CLASS</td>
+            <td>1.500.000</td>
+        </tr>
+        <tr>
+            <td>Kia_Cerato</td>
+            <td>1.200.000</td>
+        </tr>
+        <tr>
+        <td>Hyundai_i30</td>
+        <td>1.500.000</td>
+        </tr>
+        <tr>
+            <td>Honda_Civic</td>
+            <td>1.300.000</td>
+        </tr>
+        </table>
+        </center>
         <hr>
         <p><i>D segment araçlar, “geniş aile araçları ve “üst-orta sınıf araçlar” olarak da biliniyor. 
             Uzunluğu 4,6 ila 4,9 metre arasında olan D segment arabalar, yüksek motor gücüne ve ağır gövdelere sahip. 
@@ -169,6 +255,36 @@ src (source) : kaynak
                     <img src ="resimler/Opel-Insignia-2020-2021-car-01-1024x580-1.jpg"resim bulunamadı" width="20" height="20"</a>
             </ol>
         </li>
+        <center>
+        <table border="20">
+            <tr>
+                <th colspan="3">ARAÇ TABLOSU</th>
+            </tr>
+        <tr>
+            <th>isim</th>
+            <th>sınıf</th>
+            <th>fiyat</th>
+        </tr>
+        <tr>
+            <td>Volkswagen_Passat</td>
+            <td rowspan="4">D CLASS</td>
+            <td>1.800.000</td>
+        </tr>
+        <tr>
+            <td>Renault_Talisman</td>
+            <td>1.850.000</td>
+        </tr>
+        <tr>
+        <td>Peugeot_508</td>
+        <td>1.700.000</td>
+        </tr>
+        <tr>
+            <td>Opel_Insignia</td>
+            <td>1.600.000</td>
+        </tr>
+        
+        </table>
+        </center>
         <hr>
         <p><i>E segment, üst sınıf lüks otomobillerden oluşuyor.
             Tonaj olarak kaliteli, ağır ve dayanıklı malzemelerden üretilen E segment araçlar, aynı zamanda güçlü iç ve dış tasarımlara sahip oluyor. 
@@ -191,6 +307,35 @@ src (source) : kaynak
                     <img src ="resimler/x6.jpg"resim bulunamadı" width="20" height="20"</a>
             </ol>
          </li>
+         <center>
+         <table border="20">
+            <tr>
+                <th colspan="3">ARAÇ TABLOSU</th>
+            </tr>
+        <tr>
+            <th>isim</th>
+            <th>sınıf</th>
+            <th>fiyat</th>
+        </tr>
+        <tr>
+            <td>Volvo_S80</td>
+            <td rowspan="4">E CLASS</td>
+            <td>500.000</td>
+        </tr>
+        <tr>
+            <td>Volkswagen_Amarok</td>
+            <td>2.500.000</td>
+        </tr>
+        <tr>
+        <td>Mercedes-Benz_E</td>
+        <td>2.500.000</td>
+        </tr>
+        <tr>
+            <td>Bmv_X6</td>
+            <td>2.000.000</td>
+        </tr>
+     </table>
+         </center>
          <hr>
          <p><i>F segment, “lüks otomobil sınıfı” olarak biliniyor. 
             Yeni nesil teknolojiler ve üst düzey kaliteye sahip malzemelerle üretilen F segment araçlar, yüksek fiyatlarla satışa sunuluyor. 
@@ -213,6 +358,35 @@ src (source) : kaynak
                     <img src ="resimler/gle.jpg"resim bulunamadı" width="20" height="20"</a>
             </ol>
         </li>
+        <center>
+        <table border="20">
+            <tr>
+                <th colspan="3">ARAÇ TABLOSU</th>
+            </tr>
+        <tr>
+            <th>isim</th>
+            <th>sınıf</th>
+            <th>fiyat</th>
+        </tr>
+        <tr>
+            <td>Volvo_XC90</td>
+            <td rowspan="4">F CLASS</td>
+            <td>400.000</td>
+        </tr>
+        <tr>
+            <td>Porsche_Cayenne</td>
+            <td>5.000.000</td>
+        </tr>
+        <tr>
+        <td>Rolls-Royce</td>
+        <td>50.000.000</td>
+        </tr>
+        <tr>
+            <td>Mercedes-Benz_GLE</td>
+            <td>7.000.000</td>
+        </tr>
+    </table>
+        </center>
         <hr>
         <p><i>Diğer segmentlere göre daha yeni bir araç sınıfı olan M segment, farklı koşul ve durumlarda kullanılmaya uygun çok amaçlı araçlardan oluşuyor. 
             Kısaca MPV (Multi Purpose Vehicles – Çok Amaçlı Araçlar) olarak bilinen bu segment, birden fazla segmentin özelliklerini bir arada taşıyor.
@@ -233,6 +407,35 @@ src (source) : kaynak
                     <img src ="resimler/reno scenic.jpg"resim bulunamadı" width="20" height="20"</a>
             </ol>
         </li>
+        <center>
+        <table border="20">
+            <tr>
+                <th colspan="3">ARAÇ TABLOSU</th>
+            </tr>
+        <tr>
+            <th>isim</th>
+            <th>sınıf</th>
+            <th>fiyat</th>
+        </tr>
+        <tr>
+            <td>Volkswagen_Caravelle</td>
+            <td rowspan="4">M CLASS</td>
+            <td>4.000.000</td>
+        </tr>
+        <tr>
+            <td>Toyota_Verso</td>
+            <td>500.000</td>
+        </tr>
+        <tr>
+        <td>Skoda_Roomster</td>
+        <td>350.000</td>
+        </tr>
+        <tr>
+            <td>Renault_Scenic</td>
+            <td>550.000</td>
+        </tr>
+     </table>
+        </center>
         <hr>
         <p><i>J segmenti araçlar hem arazide hem de şehir içinde kullanıma uygun araçlardan oluşuyor. 
             4×4 SUV (Sport Utility Vehicle – Spor Amaçlı Araç) ve CUV (Crossover Utility Vehicle – Arazi Aracı) araçlar, J segment araç sınıfına dahil ediliyor. 
@@ -254,6 +457,35 @@ src (source) : kaynak
                     <img src ="resimler/5008.jpg"resim bulunamadı" width="20" height="20"</a>
             </ol>
         </li>
+        <center>
+        <table border="20">
+            <tr>
+                <th colspan="3">ARAÇ TABLOSU</th>
+            </tr>
+        <tr>
+            <th>isim</th>
+            <th>sınıf</th>
+            <th>fiyat</th>
+        </tr>
+        <tr>
+            <td>Volkswagen_Tiguan</td>
+            <td rowspan="4">J CLASS</td>
+            <td>2.400.000</td>
+        </tr>
+        <tr>
+            <td>Skoda_Kodiaq</td>
+            <td>3.500.000</td>
+        </tr>
+        <tr>
+        <td>Renault_Koleos</td>
+        <td>2.000.000</td>
+        </tr>
+        <tr>
+            <td>Peugeot_5008</td>
+            <td>2.300.000</td>
+        </tr>
+         </table>
+        </center>
         <hr>
         <p><i></i>İki kapılı ve iki ön koltuklu; yüksek beygir gücüne sahip, üstün manevra ve yol tutuş kabiliyetleri olan spor araçlardır. Yüksek performans bu araç sınıfının en belirgin özelliğidir.
         </i></p>
@@ -273,19 +505,37 @@ src (source) : kaynak
                     <img src ="resimler/nissan370z.jpg"resim bulunamadı" width="20" height="20"</a>
             </ol>
         </li>
+ </ol>
+ <center>
+ <table border="20">
+    <tr>
+        <th colspan="3">ARAÇ TABLOSU</th>
+    </tr>
+<tr>
+    <th>isim</th>
+    <th>sınıf</th>
+    <th>fiyat</th>
+</tr>
+<tr>
+    <td>Toyota_GT86</td>
+    <td rowspan="4">S CLASS</td>
+    <td>1.500.000</td>
+</tr>
+<tr>
+    <td>Subaru_Brz</td>
+    <td>1.400.000</td>
+</tr>
+<tr>
+<td>Porsche_718_Cayman_</td>
+<td>7.650.000</td>
+</tr>
+<tr>
+    <td>Nissan_370Z</td>
+    <td>4.500.000</td>
+</tr>
+</table>
+ </center>
 
-
-
-
-
-
-
-
-
-
-
-    </ol>
-   
 
 
 
