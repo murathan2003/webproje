@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <a href="../index.html"><H3><mark>Anasayfa</Mark></h3></a>
-    <a href="bizkimiz.html"><H3><mark>BizKimiz?</Mark></h3></a>
-<a href="hedefimiz.html"><H3><mark>Hedefimiz</Mark></h3></a>
 
-<!--
+</head>
+
+<body>
+    <a href="../index.html">
+        <H3><mark>Anasayfa</Mark></h3>
+    </a>
+    <a href="bizkimiz.html">
+        <H3><mark>BizKimiz?</Mark></h3>
+    </a>
+    <a href="hedefimiz.html">
+        <H3><mark>Hedefimiz</Mark></h3>
+    </a>
+
+    <!--
 1 from =liste oluşturur
 2 input =değer oluşturu
 3 type =değerin türünü belirler
@@ -22,94 +31,105 @@
 
 -->
     <h1>İletişim</h1>
-    
-<form>
-<table>
-    <tr>
-        <td>Adınız:</td>
-        <td><input type="text"></td>
-    </tr>
-    <tr>
-        <td>Soyadınız:</td>
-        <td><input type="text"></td>
-    </tr>
-    <tr>
-        <td>Email Adres:</td>
-        <td><input type="email"></td>
-    </tr>
-    <tr>
-        <td>şifre</td>
-        <td><input type="password"></td>
-    </tr>
-    <tr>
-        <td>Cinsiyet:</td>
-        <td>
-            <input id="erkekRadio" type="radio"name ="CinsiyetRadio"value="Erkek">
-            <label for="erkekRadio">Erkek</label>
-            <input id="kadınRadio" type="radio"name="CinsiyetRadio"value="Kadın">
-            <label for="kadınRadio">Kadın</label>
-        </td>
-    </tr>
-    <tr>
-        <td>Doğum Tarihiniz</td>
-        <td><input type="date"></td>
-    </tr>
-    <tr>
-        <th colspan="2">Hobiler</th>
-    </tr>
-    <tr>
-        <td>kitap okumal</td>
-        <td><input type="checkbox"></td>
-    </tr>
-    <tr>
-        <td>Spor yapmak</td>
-        <td><input type="checkbox"></td>
-    </tr>
-    <tr>
-        <td>Enstrüman Çalmak</td>
-        <td><input type="checkbox"></td>
-    </tr>
-    <tr>
-        <td colspan="2"><input type="file"></td>
-    </tr>
-    <tr>
-        <td colspan="2"><textarea name="" id=""cols="40"rows="10"placeholder="mesajınız..."></textarea></td>
-    </tr>
-    <tr>
-        <th colspan="2">Kişisel verileriniz tarafımızca kayıt altına alınacaktır</th>
-    </tr>
-    <tr>
-        <td>OKUDUM ,ONAYLIYORUM. <input type="radio"name="SözleşmeRadio"></td>
-    </tr>
-        <tr>
-        <td>okudum ,onaylamıyorum. <input type="radio"name="SözleşmeRadio"></td>
-    </tr>
-    <tr>
-        <td colspan="2"> <input type="submit"value="Gönder">
-            <input type="reset"value="temizle"
-        </td>
-    </tr>
+
+    <form action="iletişim.html" method="get">
+        <table>
+            <tr>
+                <td>Adınız:</td>
+                <td><input type="text" id="adınız" name="adınız"></td>
+            </tr>
+            <tr>
+                <td>Soyadınız:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Email Adres:</td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>şifre</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Cinsiyet:</td>
+                <td>
+                    <input id="erkekRadio" type="radio" name="CinsiyetRadio" value="Erkek">
+                    <label for="erkekRadio">Erkek</label>
+                    <input id="kadınRadio" type="radio" name="CinsiyetRadio" value="Kadın">
+                    <label for="kadınRadio">Kadın</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Doğum Tarihiniz</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <th colspan="2">Hobiler</th>
+            </tr>
+            <tr>
+                <td>kitap okumal</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Spor yapmak</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Enstrüman Çalmak</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="file"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><textarea name="" id="" cols="40" rows="10" placeholder="mesajınız..."></textarea></td>
+            </tr>
+            <tr>
+                <th colspan="2">Kişisel verileriniz tarafımızca kayıt altına alınacaktır</th>
+            </tr>
+            <tr>
+                <td>OKUDUM ,ONAYLIYORUM. <input type="radio" name="SözleşmeRadio"></td>
+            </tr>
+            <tr>
+                <td>okudum ,onaylamıyorum. <input type="radio" name="SözleşmeRadio"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Gönder</button>
+                </td>
+            </tr>
 
 
 
 
-</table>
-</form>
+        </table>
+    </form>
 
 
     <h2>Bizimle İletişime Geçin</h2>
-    
+
     <p><strong>Adres:</strong><br>
-    [MURATHAN'ın Blogu]<br>
-    [konuralp/DÜZCE]<br>
-    [81000]</p>
+        [MURATHAN'ın Blogu]<br>
+        [konuralp/DÜZCE]<br>
+        [81000]</p>
 
     <p><strong>Telefon:</strong><br>
-    [+905415119361]</p>
+        [+905415119361]</p>
 
     <p><strong>E-posta:</strong><br>
-    [m.malkoc2003]</p>
+        [m.malkoc2003]</p>
+<hr>
+<hr>
+    <script>
+        var degerler = new URLSearchParams(window.location.search);
+        var Adınız = degerler.get('adınız');
+        var email = degerler.get('email');
 
-    
+        document.write("<p> <b> KAYIT ONAYLANDI. </b> </p>");
+        document.write("<p>Adınız: " + Adınız + "</p>");
+        document.write("<p>E-Posta Adresi: " + email + "</p>");
+    </script>
+    <hr>
 </body>
+
 </html>
