@@ -1,0 +1,1 @@
+console.log('Spor okulu JS çalışıyor');

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kayıt ve İletişim | Spor Okulu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+   
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Spor Okulu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+           <li class="nav-item"><a class="nav-link" href="index.html">Anasayfa</a></li>
+          <li class="nav-item"><a class="nav-link" href="hakkımızda.html">Hakkımızda</a></li>
+          <li class="nav-item"><a class="nav-link" href="programlar.html">Programlar</a></li>
+          <li class="nav-item"><a class="nav-link" href="antrenörler.html">Antrenörlerimiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="etkinlikler.html">Etkinlikler</a></li>
+          <li class="nav-item"><a class="nav-link" href="öneriveyorumlar.html">öneri&yorumlar</a></li>
+          <li class="nav-item"><a class="nav-link" href="bilgilendirme.html">Bilgilendirme</a></li>
+          <li class="nav-item"><a class="nav-link" href="fiyatlandırma.html">Fiyatlandırma</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Başlık -->
+  <header class="bg-primary text-white text-center py-5">
+    <h1 class="display-5">Kayıt ve İletişim</h1>
+    <p class="lead">Bizimle iletişime geç, spora ilk adımını at!</p>
+  </header>
+
+  <!-- Kayıt Formu -->
+  <section class="container my-5">
+    <div class="row g-5 align-items-start">
+      <div class="col-md-7">
+        <div class="form-section shadow-sm">
+          <h4 class="mb-4">📋 Kayıt Formu</h4>
+          <form
+           action="https://formspree.io/f/meogawyl"
+           method="POST"
+          >
+            <div class="mb-3">
+              <label for="adsoyad" class="form-label">Ad Soyad</label>
+              <input type="text" class="form-control" id="adsoyad" required name="adsoyad">
+            </div>
+            <div class="mb-3">
+              <label for="yas" class="form-label">Yaş</label>
+              <input type="number" class="form-control" id="yas" required name="yaş">
+            </div>
+            <div class="mb-3">
+              <label for="telefon" class="form-label">Telefon Numarası</label>
+              <input type="tel" class="form-control" id="telefon" required name="telefon">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-Posta</label>
+              <input type="email" class="form-control" id="email" required name="email">
+            </div>
+            <div class="mb-3">
+              <label for="brans" class="form-label">Branş Seçimi</label>
+              <select class="form-select" id="brans" required name="branş">
+                <option selected disabled>Bir branş seçin</option>
+                <option value="Boks">Boks</option>
+                <option value="Yüzme">Yüzme</option>
+                <option value="Jimnastik">Jimnastik</option>
+                <option value="Voleybol">Voleybol</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="mesaj" class="form-label">Mesaj (isteğe bağlı)</label>
+              <textarea class="form-control" id="mesaj" rows="3" name="mesaj"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Gönder</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- İletişim Bilgileri -->
+      <div class="col-md-5">
+        <h4 class="mb-4">📞 İletişim Bilgileri</h4>
+        <div class="contact-box mb-3">
+          <i class="bi bi-geo-alt-fill contact-icon"></i>
+          <p><strong>Adres:</strong> Vatan Mah. Spor Cad. No:12, Sakarya</p>
+        </div>
+        <div class="contact-box mb-3">
+          <i class="bi bi-envelope-fill contact-icon"></i>
+          <p><strong>E-Posta:</strong> Malkoc@gmail.com</p>
+        </div>
+        <div class="contact-box mb-3">
+          <i class="bi bi-telephone-fill contact-icon"></i>
+          <p><strong>Telefon:</strong> +90 531 085 8154</p>
+        </div>
+
+        <!-- WhatsApp ve Mail Butonları -->
+        <div class="d-grid gap-2 mt-4">
+          <a href="https://wa.me/905551234567" class="btn btn-success" target="_blank">
+            <i class="bi bi-whatsapp"></i> WhatsApp'tan Yaz
+          </a>
+          <a href="mailto:info@sporokulu.com" class="btn btn-outline-primary">
+            <i class="bi bi-envelope"></i> Mail Gönder
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center bg-dark text-white py-4">
+    <div class="container">
+      <p>&copy; 2025 Spor Okulu | Tüm hakları saklıdır.</p>
+      <div>
+        <a href="https://www.instagram.com/murathan_1m/?next=%2F" class="text-white mx-2">Instagram</a>
+        <a href="#" class="text-white mx-2">Facebook</a>
+        <a href="#" class="text-white mx-2">İletişim</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
